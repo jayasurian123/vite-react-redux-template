@@ -20,14 +20,16 @@ export const apiError = ({ response, feature, meta }) => ({
   meta
 });
 
-const getAuthorisationHeader = () => (getSession() ? { Authorization: getSession() } : {});
+const getAuthorisationHeader = () =>
+  getSession() ? { Authorization: getSession() } : {};
 
 // only in dev env
-const getApiKey = () => (process.env.API_KEY
-  ? {
-    api_key: process.env.API_KEY
-  }
-  : {});
+const getApiKey = () =>
+  import.meta.env.API_KEY
+    ? {
+        api_key: import.meta.env.API_KEY
+      }
+    : {};
 
 const genericHeaders = () => ({
   'Content-Type': 'application/json',
