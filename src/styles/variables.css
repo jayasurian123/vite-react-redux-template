@@ -1,0 +1,7 @@
+/* Variables */
+:root {
+  --font-roboto-regular: roboto-regular, sans-serif;
+  --font-roboto-medium: roboto-medium, sans-serif;
+  --font-roboto-bold: roboto-bold, sans-serif;
+  --font-size-regular: rem(13px);
+}
