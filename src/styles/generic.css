@@ -1,0 +1,26 @@
+html {
+  font-size: 13px;
+}
+
+html * {
+  font-size: var(--font-size-regular);
+  font-family: var(--font-roboto-regular);
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+button:focus {
+  outline: 0;
+}
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.container {
+  margin: 0 auto;
+}
